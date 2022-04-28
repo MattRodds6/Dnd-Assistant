@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
+import CharacterCreator from './pages/CharacterCreator';
 // import Spells from './pages/Spells';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,6 +19,7 @@ function App() {
         <NavigationBar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path='/creation' element={<CharacterCreator/>}/>
           {/* <Route path='spells' element={<Spells/>} /> */}
         </Routes>
       </Router>
